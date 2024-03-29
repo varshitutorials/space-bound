@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My 2D Game</title>
+    <link rel="stylesheet" type="text/css" href="file:///C:/varshitha poloju/index.css">
+    <!-- Make sure to replace the path with the correct location of your CSS file -->
+    <link rel="manifest" href="/manifest.json">
+
+</head>
+<body>
+    background-image: url('C:\varshitha poloju/space.jpg');
+    <canvas id="canvas"></canvas>
+    <!-- Any other HTML content or UI elements can go here -->
+    <script src="file:///C:/varshitha poloju/index.js"></script>
+    <!-- Make sure to replace the path with the correct location of your JavaScript file -->
+    <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(registration => {
+          console.log('Service Worker registered with scope:', registration.scope);
+        })
+        .catch(error => {
+          console.error('Service Worker registration failed:', error);
+        });
+    });
+  }
+</script>
+  
+     <script src="C:\tejaswi dongalla\game.js"></script>
+
+</body>
+</html>
